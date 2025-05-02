@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <button id="homeButton">Home</button>
-            <button id="menuButton">Menu</button>
-            <button id="contactButton">Contact Us</button>
-        </nav>
-    </header>
-    <div id="content"></div>
+  <div id="app">
+    <!-- Sidebar (optional) -->
+    <aside class="sidebar">
+      <h2>Projects</h2>
+      <ul id="project-list"></ul>
+      <button id="add-project-btn">+ Add Project</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="header">
+        <h1 class="content-project-name">Project Name</h1>
+        <button id="add-todo-btn">+ New Todo</button>
+      </section>
+
+      <section class="todo-container">
+      </section>
+    </main>
+
+    <!-- Project Container -->
+    <div id="project-container"></div>
+    </div>
+
+  <dialog class="todo-item-dialog">
+  </dialog>
 </body>
 </html>
